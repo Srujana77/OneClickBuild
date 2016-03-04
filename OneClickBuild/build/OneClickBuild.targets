@@ -16,6 +16,7 @@
     <!-- Fallback to "0" if still not set -->
     <Build Condition="'$(Build)' == ''">0</Build>
     <DeployFailOnBuildNotSet Condition="'$(DeployFailOnBuildNotSet)' == ''">true</DeployFailOnBuildNotSet>
+    <UpdateAssemblyInfo Condition="'$(UpdateAssemblyInfo)' == ''">true</UpdateAssemblyInfo>
 
     <NuspecFile Condition="'$(NuspecFile)'==''">$(ProjectDir)Package.nuspec</NuspecFile>
     <NuGetSourceToDeploy Condition="'$(NuGetSourceToDeploy)'==''">https://www.nuget.org</NuGetSourceToDeploy>
